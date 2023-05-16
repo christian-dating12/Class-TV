@@ -2,7 +2,7 @@
 
 class Television:
 
-# Define self, channel, volume, status_TV.
+    # Define self, channel, volume, status_TV.
     def __init__(self, channel, volume, status_TV):
         self.get_channel = channel
         self.get_volume = volume 
@@ -19,12 +19,20 @@ class Television:
         elif self.get_volume < 1:
             self.get_volume = 1
 
-# If true, turn on tv
+    # If true, turn on tv
     def turn_on(self):
         self.status_TV = True
-# If false, turn off tv
+    # If false, turn off tv
     def turn_off(self):
         self.status_TV = False
+
+    # parameter in getting the channel
+    def get_channel(self):
+        if self.get_channel > 120:
+            self.get_channel = 120
+        elif self.get_channel < 1:
+            self.get_channel = 1
+        return self.get_channel
     
 # set new channel between 1-120
 # set new volume between 1-7

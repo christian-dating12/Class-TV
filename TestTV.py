@@ -41,4 +41,15 @@ def main():
     tv_2.channel_down()
     print("Channel Down tv_2:",tv_2.get_channel)
 
-# tv_1 volume_up and volume_down
+    # tv_1 volume_up and volume_down
+    tv_1.volume_up()
+    print("Volume Up tv_1:",tv_1.get_volume)
+    tv_1.volume_down()
+    print("Volume Down tv_1:",tv_1.get_volume)
+
+    tv_2.volume_up()
+    print("\n\033[95mVolume Up tv_2:",tv_2.get_volume)
+    tv_2.volume_down()
+    print("\033[95mVolume Down tv_2:",tv_2.get_volume,"\n")
+
+main()

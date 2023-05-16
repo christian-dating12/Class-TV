@@ -70,4 +70,7 @@ class Television:
     def volume_up(self):
         if self.get_volume <= 6:
             self.get_volume = self.get_volume + 1
-# Decrease the volume level by 1
+    # Decrease the volume level by 1
+    def volume_down(self):
+        if self.get_volume >= 2:
+            self.get_volume = self.get_volume - 1

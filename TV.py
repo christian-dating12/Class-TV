@@ -7,6 +7,17 @@ class Television:
         self.get_channel = channel
         self.get_volume = volume 
         self.status_TV = status_TV
+
+        # channel (1-120)
+        if self.get_channel > 120:
+            self.get_channel = 120
+        elif self.get_channel < 1:
+            self.get_channel = 1
+        # volume (1-7)  
+        if self.get_volume > 7:
+            self.get_volume = 7
+        elif self.get_volume < 1:
+            self.get_volume = 1
 # If true, turn on tv
 # If false, turn off tv
 # set new channel between 1-120

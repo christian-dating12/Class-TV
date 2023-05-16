@@ -61,6 +61,9 @@ class Television:
     def channel_up(self):
         if self.get_channel <= 119:
             self.get_channel = self.get_channel + 1
-# Decrease the channel number by 1
+    # Decrease the channel number by 1
+    def channel_down(self):
+        if self.get_channel >= 2:
+            self.get_channel = self.get_channel - 1
 # Increase the volume level by 1
 # Decrease the volume level by 1

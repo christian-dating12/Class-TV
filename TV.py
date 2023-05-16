@@ -41,7 +41,13 @@ class Television:
             self.get_volume = 1
         return self.get_volume
     
-# set new channel between 1-120
+    # set new channel between 1-120
+    def set_channel(self, any_channel):
+        self.get_channel = any_channel
+        if self.get_channel > 120:
+            self.get_channel = 120
+        elif self.get_channel < 1:
+            self.get_channel = 1
 # set new volume between 1-7
 # Increase the channel number by 1
 # Decrease the channel number by 1

@@ -7,7 +7,16 @@ tv_1 = Television
 tv_2 = Television
 
 # PSEUDOCODES
+
+def main():
+    tv_1 = Television(30, 3, True)
+    tv_2 = Television(3, 2, True)
+
 # display tv_1 channel and volume, display tv_2 channel and volume
+    print("tv_1's channel is", tv_1.get_channel, "and volume level is", tv_1.get_volume)
+    print("tv_2's channel is", tv_2.get_channel, "and volume level is", tv_2.get_volume)
+
+# tv_1 channel and volume, tv_2 channel and volume
 # Set tv_1 channel and volume level
 # Set tv_2 channel and volume level
 # tv_1 channel_up and channel_down

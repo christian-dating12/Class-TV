@@ -22,8 +22,13 @@ def main():
     tv_1.set_volume(9)
     print("The new current volume for tv_1 is", tv_1.get_volume,".")
 
-# Set tv_1 channel and volume level
-# Set tv_2 channel and volume level
+
+    # Set tv_2 channel and volume level
+    tv_2.set_channel(169)
+    print("New Channel tv_2:", tv_2.get_channel)
+    tv_2.set_volume(-5)
+    print("The new current volume for tv_2 is", tv_2.get_volume, ".")
+    
 # tv_1 channel_up and channel_down
 # tv_2 channel_up and channel_down
 # tv_1 volume_up and volume_down

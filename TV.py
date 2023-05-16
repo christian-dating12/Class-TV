@@ -23,6 +23,8 @@ class Television:
     def turn_on(self):
         self.status_TV = True
 # If false, turn off tv
+    def turn_off(self):
+        self.status_TV = False
     
 # set new channel between 1-120
 # set new volume between 1-7

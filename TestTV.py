@@ -28,7 +28,12 @@ def main():
     print("New Channel tv_2:", tv_2.get_channel)
     tv_2.set_volume(-5)
     print("The new current volume for tv_2 is", tv_2.get_volume, ".")
-    
-# tv_1 channel_up and channel_down
+
+    # tv_1 channel_up and channel_down
+    tv_1.channel_up()
+    print("Channel Up tv_1:",tv_1.get_channel)
+    tv_1.channel_down()
+    print("Channel Down tv_1:",tv_1.get_channel)
+
 # tv_2 channel_up and channel_down
 # tv_1 volume_up and volume_down

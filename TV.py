@@ -33,6 +33,13 @@ class Television:
         elif self.get_channel < 1:
             self.get_channel = 1
         return self.get_channel
+    # parameter in getting the volume
+    def get_volume(self):
+        if self.get_volume > 7:
+            self.get_volume = 7
+        elif self.get_volume < 1:
+            self.get_volume = 1
+        return self.get_volume
     
 # set new channel between 1-120
 # set new volume between 1-7
